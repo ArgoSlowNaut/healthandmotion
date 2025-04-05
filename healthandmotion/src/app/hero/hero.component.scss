@@ -1,0 +1,16 @@
+
+
+  .hero-title {
+    font-size: 42px;
+    font-weight: 900;
+    color: #ffffff; /* neon green-yellow */
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  
+    /* White thick shadow for background effect */
+    text-shadow:
+      2px 2px 0 $neon-green,
+      -2px 2px 0 $neon-green,
+      0 0 8px $neon-green;
+  }

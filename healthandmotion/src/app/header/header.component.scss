@@ -1,0 +1,49 @@
+.header {
+    background-color: #000; /* pure black */
+    color: $neon-green; /* neon lime yellow-green */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 2px solid $neon-green;
+  }
+  
+  .header-left .about-btn {
+    background-color: transparent;
+    color: $neon-green;
+    border: 2px solid $neon-green;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .header-left .about-btn:hover {
+    background-color: $neon-green;
+    color: #000;
+  }
+  
+  .header-title {
+    font-size: 22px;
+    font-weight: 800;
+    text-align: center;
+    flex: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 3px 1px 4px white;
+  }
+  
+  .header-right a {
+    margin-left: 12px;
+    color: $neon-green;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .header-right a:hover {
+    color: white;
+  }
+  
