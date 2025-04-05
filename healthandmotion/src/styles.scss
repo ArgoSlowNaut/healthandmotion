@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import './styles/variables.scss';
 .hero-container {
     background-image: url('assets/wallscreen.png'); /* already works */
   background-size: cover;
@@ -12,6 +13,3 @@
   justify-content: center;
   }
   
-$neon-green: #d1ff00;
-$gym-black: #000000;
-$light-glow: white;
