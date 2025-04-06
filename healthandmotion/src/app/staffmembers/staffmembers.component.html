@@ -1,0 +1,7 @@
+<div class="staff-section">
+    <div class="staff-card" *ngFor="let member of staffMembers">
+      <img [src]="member.photo" alt="{{ member.name }}" class="staff-photo" />
+      <div class="staff-name">{{ member.name }}</div>
+    </div>
+  </div>
+  

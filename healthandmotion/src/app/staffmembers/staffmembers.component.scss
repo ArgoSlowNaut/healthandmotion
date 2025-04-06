@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+.staff-section {
+    background-color: $background-color; /* light green */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .staff-card {
+    background-color: black;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 150px;
+  }
+  
+  .staff-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .staff-name {
+    font-size: 1rem;
+    font-weight: bold;
+  }

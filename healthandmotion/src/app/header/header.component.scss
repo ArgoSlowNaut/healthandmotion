@@ -2,7 +2,7 @@
 
 
 .header {
-    background-color: #000; /* pure black */
+    background-color: $gym-black; /* pure black */
 
     color: $neon-green; /* neon lime yellow-green */
     display: flex;
@@ -10,7 +10,6 @@
     align-items: center;
     padding: 12px 24px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-bottom: 2px solid $neon-green;
   }
   
   .header-left .about-btn {
