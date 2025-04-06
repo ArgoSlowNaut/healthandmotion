@@ -1,4 +1,4 @@
-name: Build and deploy static site
+name: Build and Deploy Angular App to GitHub Pages
 
 on:
   push:
@@ -22,28 +22,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd healthandmotion
+          npm install
 
-      - name: Build site
-        run: npm run build && mkdir docs && cp -r build/* docs/
-        # Adjust `build/` to your actual output folder
+      - name: Build Angular app
+        run: |
+          cd healthandmotion
+          npm run build
+          mkdir -p docs
+          cp -r dist/* docs/
 
-      - name: Setup Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Upload /docs folder
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './docs'
+          path: healthandmotion/docs
 
       - name: Deploy to GitHub Pages
         id: deployment
