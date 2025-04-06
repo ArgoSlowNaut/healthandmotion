@@ -43,7 +43,7 @@ jobs:
           cd healthandmotion
           ng build --base-href=/healthandmotion/
           mkdir -p docs
-          cp -r dist/healthandmotion/* docs/
+          cp -r dist/healthandmotion/browser/* docs/
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
