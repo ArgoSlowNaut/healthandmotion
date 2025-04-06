@@ -1,15 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import './styles/variables.scss';
-.hero-container {
-    background-image: url('assets/wallscreen.png'); /* already works */
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  border-radius: 12px;
-  margin: 20px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
-  
+
+body {
+  margin : 0;
+  padding: 0; 
+  background-color: $background-color; 
+}
+html {
+  scroll-behavior: smooth;
+}

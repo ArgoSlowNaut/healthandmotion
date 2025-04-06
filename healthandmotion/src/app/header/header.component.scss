@@ -1,6 +1,9 @@
 @import '../../styles/variables';
+
+
 .header {
     background-color: #000; /* pure black */
+
     color: $neon-green; /* neon lime yellow-green */
     display: flex;
     justify-content: space-between;
@@ -47,3 +50,10 @@
     color: white;
   }
   
+  :host {
+    display: block;
+    margin: 1.5rem 2rem; /* top & bottom: 1.5rem, left & right: 2rem */
+    border-radius: 12px;
+    overflow: hidden; /* ensures inner content stays inside rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* optional: adds soft shadow */
+  }

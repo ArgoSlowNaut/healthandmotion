@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+:host {
+    display: block;
+  
+    h2,
+    h3 {
+      color: $neon-green;
+    }
+  
+    button {
+      border-color: $neon-green;
+      color: $neon-green;
+  
+      &:hover {
+        background-color: rgba(168, 255, 96, 0.1); // slight neon tint on hover
+        box-shadow: 0 4px 6px -1px $neon-green;
+      }
+    }
+  }
