@@ -41,7 +41,7 @@ jobs:
       - name: Build Angular app
         run: |
           cd healthandmotion
-          ng build --base-href=/healthandmotion/
+          ng build --base-href=/healthandmotion/healthandmotion
           mkdir -p docs
           cp -r dist/healthandmotion/browser/* docs/
 
