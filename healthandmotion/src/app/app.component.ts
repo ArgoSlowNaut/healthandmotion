@@ -5,10 +5,11 @@ import { HeroComponent } from './hero/hero.component';
 import { StaffmembersComponent } from './staffmembers/staffmembers.component';
 import { AvailableplansComponent } from "./availableplans/availableplans.component";
 import {LocationinfoComponent} from "./locationinfo/locationinfo.component"; 
+import {CollageComponent} from "./collage/collage.component"; 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, HeroComponent, AvailableplansComponent, StaffmembersComponent, LocationinfoComponent],
+  imports: [RouterOutlet, CollageComponent, HeaderComponent, HeroComponent, AvailableplansComponent, StaffmembersComponent, LocationinfoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-locationinfo',
   imports: [CommonModule], 
+  styleUrls: ['./locationinfo.component.scss'],
   templateUrl: './locationinfo.component.html',
 })
 export class LocationinfoComponent {

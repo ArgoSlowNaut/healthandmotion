@@ -1,0 +1,15 @@
+:host {
+    --neon-green: #73b43e;
+    --light-glow: #ffffff;
+    --gym-black: #3a3a3a;
+    --background-color: #cacacada;
+  }
+  
+  img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  div:has(> img:hover) {
+    box-shadow: 0 0 20px var(--neon-green);
+  }
+  
